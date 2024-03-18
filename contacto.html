@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title id="titulo" >Contacto | Cuervos Rider</title>
+        <link rel="shortcut icon" href="img/logo.jpeg">
+        <link rel="stylesheet" href="Reset.css">
+        <link rel="stylesheet" href="style-servicios.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1 id="logo"><a href="index.html"><img src="img/bike-12_icon-icons.com_66451.svg" alt="Logo de Cuervos Rider"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="ubicacion.html">Ubicacion</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form >
+                <label for="nombreApellido">Nombre y Apellido</label>
+                <input type="text" id="nombreApellido" class="inputPadron" required>
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo" class="inputPadron" required placeholder="email@dominio.com">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="inputPadron" required placeholder="(XXX)XXX XXXX">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje" cols="70" rows="10" class="inputPadron"></textarea>
+                <fieldset>
+                    <legend>Como le gustaria ser contactado</legend>
+                    <label for="radioEmail"><input type="radio" name="contacto" value="email" id="radioEmail">Email</label>                    
+                    <label for="radioTelefono"><input type="radio" name="contacto" value="telefono" id="radioTelefono">Telefono</label>
+                    <label for="radioWhastapp"><input type="radio" name="contacto" value="whatsapp" id="radioWhastapp" checked>Whatsapp</label>
+                </fieldset>
+                <fieldset>
+                    <legend>En que horario prefiere ser atendido?</legend>
+                    <select name="" id="">
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>
+                </fieldset>
+
+                <Label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades y promociones de cuervos ride?</input></Label>
+                <button type="submit" class="enviar">Enviar</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Miercoles - Viernes</td>
+                        <td>10-18hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Sabado - Domingo</td>
+                        <td>9-20hrs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <p class="copyright">&copy Copyright CuervosRider 2024</p>
+        </footer>
+    </body>
+</html>
